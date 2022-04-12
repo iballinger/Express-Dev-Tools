@@ -1,8 +1,8 @@
 const skills = [
-    {id: 000000, skill: 'CSS', known: true},
-    {id: 000001, skill: 'HTML', known: true},
-    {id: 000002, skill: 'Javascript', known: true},
-    {id: 000003, skill: 'Python', known: false},
+    {id: 100000, skill: 'CSS', known: true},
+    {id: 100001, skill: 'HTML', known: true},
+    {id: 100002, skill: 'Javascript', known: true},
+    {id: 100003, skill: 'Python', known: false},
 ]; //Remember that id is currently arbitrary, there's no hash function.
 
 module.exports = {
@@ -16,5 +16,5 @@ function getOne(id) {
 }
 
 function getAll() {
-    return todos;
+    return skills;
 }
