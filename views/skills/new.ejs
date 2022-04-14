@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Express Skills</title>
 </head>
+
 <body>
-    <h1>Skills</h1>
-    <ul>
-        <% skills.forEach(function(t) { %>
-            <li>
-                <a href="/skills/<%= t.id %>"><%= t.skill %></a>
-                -
-                <%= t.known ? 'known' : 'still learning' %>
-            </li>
-        <% }); %>
-    </ul>
-    <a href="/skills/new">Add Skill</a>
+    <h1>New Skill</h1>
+    <form action="/skills" method="POST" autocomplete="off">
+        <input type="text" name="skill">
+        <button type="submit">Save Skill</button>
+    </form>
 </body>
+
 </html>

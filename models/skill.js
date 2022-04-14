@@ -6,8 +6,10 @@ const skills = [
 ]; //Remember that id is currently arbitrary, there's no hash function.
 
 module.exports = {
+    getAll,
     getOne,
-    getAll
+    create,
+    deleteOne,
 };
 
 function getOne(id) {
